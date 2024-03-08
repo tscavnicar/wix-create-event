@@ -4,6 +4,7 @@ import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
 import { useServerAuthSession } from '@app/hooks/useServerAuthSession';
 import { safeGetServices } from '@app/model/service/service-api';
 import testIds from '@app/utils/test-ids';
+import { CreateEvent } from './components/CreateEvent';
 
 export default async function Home() {
   const wixSession = useServerAuthSession();
@@ -40,6 +41,9 @@ export default async function Home() {
             >
               Book Now
             </a>
+          </div>
+          <div className="pt-7">
+            <CreateEvent />
           </div>
         </div>
       </div>
