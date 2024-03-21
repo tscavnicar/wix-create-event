@@ -12,10 +12,10 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.15", "@babel/runtime@^7.23.2", "@babel/runtime@^7.23.9":
-  version "7.23.9"
-  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.23.9.tgz"
-  integrity sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.15", "@babel/runtime@^7.23.2", "@babel/runtime@^7.24.0":
+  version "7.24.1"
+  resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.24.1.tgz"
+  integrity sha512-+BIznRzyqBf+2wCTxcKE3wDjfGeCoVE61KSHGpkzqrLi8qxqFwBeUFyId2cxkTmm55fzDGnm0+yCxaxygrLUnQ==
   dependencies:
     regenerator-runtime "^0.14.0"
 
@@ -332,6 +332,22 @@
   resolved "https://registry.npmjs.org/@ungap/structured-clone/-/structured-clone-1.2.0.tgz"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
 
+"@wix/api-client@^1.7.11":
+  version "1.7.11"
+  resolved "https://registry.npmjs.org/@wix/api-client/-/api-client-1.7.11.tgz"
+  integrity sha512-cUtkg9Pubqv9wIKH4Rgi0BftYMfaQKK7RUYQ78eaS0q17w2sIhy+tzr2jHTHulb3Fdd9hbdXyQyVb6R+rOr8AA==
+  dependencies:
+    "@babel/runtime" "^7.23.2"
+    "@wix/identity" "^1.0.74"
+    "@wix/image-kit" "^1.59.0"
+    "@wix/redirects" "^1.0.34"
+    "@wix/sdk-types" "^1.5.9"
+    crypto-js "^4.2.0"
+    jose "^5.2.1"
+    pkce-challenge "^3.1.0"
+    querystring "^0.2.1"
+    type-fest "^4.9.0"
+
 "@wix/bookings@^1.0.122":
   version "1.0.319"
   resolved "https://registry.npmjs.org/@wix/bookings/-/bookings-1.0.319.tgz"
@@ -361,7 +377,7 @@
     kind-of "~5.1.0"
     tslib "^2.6.2"
 
-"@wix/identity@^1.0.73":
+"@wix/identity@^1.0.73", "@wix/identity@^1.0.74":
   version "1.0.74"
   resolved "https://registry.npmjs.org/@wix/identity/-/identity-1.0.74.tgz"
   integrity sha512-F+yYCXqUWjcyqlbMzv9g4LcrlFFl3kkowLjUcMXjsNYOoph57ORfFb3KWBmFi1rH28b7BRIqsIsg6OTyVOOA0Q==
@@ -371,12 +387,12 @@
     "@wix/sdk-runtime" "^0.2.7"
     "@wix/sdk-types" "^1.5.3"
 
-"@wix/image-kit@^1.56.0":
-  version "1.57.0"
-  resolved "https://registry.npmjs.org/@wix/image-kit/-/image-kit-1.57.0.tgz"
-  integrity sha512-gMHGo24hxn5VDUxLfAG+GaHrdMFhT/9xSLl5dR5QkTzIc6elyKCTxSxFvDRvNuqzGeaExW1YLmlgRvHScgNZUw==
+"@wix/image-kit@^1.56.0", "@wix/image-kit@^1.59.0":
+  version "1.60.0"
+  resolved "https://registry.npmjs.org/@wix/image-kit/-/image-kit-1.60.0.tgz"
+  integrity sha512-tmDaPjItRfS9FRWVyQoGl0y9DijCOKFzz70VNJQqH2DnXL9AqhwxJPhT8ugBK95tC/fE51KewdPC8ehBGJfqSg==
   dependencies:
-    "@babel/runtime" "^7.23.9"
+    "@babel/runtime" "^7.24.0"
     tslib "^2.6.2"
 
 "@wix/members@^1.0.38":
@@ -487,14 +503,15 @@
     "@wix/sdk-runtime" "^0.2.7"
     "@wix/sdk-types" "^1.5.3"
 
-"@wix/redirects@^1.0.13", "@wix/redirects@^1.0.32":
-  version "1.0.32"
-  resolved "https://registry.npmjs.org/@wix/redirects/-/redirects-1.0.32.tgz"
-  integrity sha512-ByU+lqZCQLm2tdp+PQYzolafFCHZtCYWrCZIhp2UZB4mUsGEeT1crgmqq4kCn1Fr8V5aL3wM6IxEldBqfRYqUA==
+"@wix/redirects@^1.0.13", "@wix/redirects@^1.0.32", "@wix/redirects@^1.0.34":
+  version "1.0.35"
+  resolved "https://registry.npmjs.org/@wix/redirects/-/redirects-1.0.35.tgz"
+  integrity sha512-7pwr7Z1xqWfCP3p/jUu2TTUmVSeJLcp67bst6WXApnSy0pSeR1kcZ2506Z107Yd//Xedvm9K+6uR9Ez2/BDN5w==
   dependencies:
     "@wix/metro-runtime" "^1.1528.0"
     "@wix/motion-edm-autogen-query-wrapper" "^1.0.37"
-    "@wix/sdk-types" "^1.3.0"
+    "@wix/sdk-runtime" "^0.2.7"
+    "@wix/sdk-types" "^1.5.3"
 
 "@wix/sdk-runtime@^0.2.7":
   version "0.2.8"
@@ -503,7 +520,7 @@
   dependencies:
     "@wix/sdk-types" "^1.5.8"
 
-"@wix/sdk-types@^1.3.0", "@wix/sdk-types@^1.5.3", "@wix/sdk-types@^1.5.8", "@wix/sdk-types@^1.5.9":
+"@wix/sdk-types@^1.5.3", "@wix/sdk-types@^1.5.8", "@wix/sdk-types@^1.5.9":
   version "1.5.9"
   resolved "https://registry.npmjs.org/@wix/sdk-types/-/sdk-types-1.5.9.tgz"
   integrity sha512-kxksj+wXFcOR4ImKCqq68w5xmRWIf712/Lg0v7FJAsH7eaWOc79U1TxAkkCEEPxcVN0AwOOevlRBQXx+CkkeMA==
