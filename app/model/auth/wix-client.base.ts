@@ -5,7 +5,7 @@ import {
   extendedBookings,
   bookings,
 } from '@wix/bookings';
-import { wixEvents } from '@wix/events';
+import { wixEventsV2 } from '@wix/events';
 import { members } from '@wix/members';
 import { plans, orders } from '@wix/pricing-plans';
 import { redirects } from '@wix/redirects';
@@ -36,7 +36,7 @@ export const getWixClient = ({ cookieStore }: { cookieStore: CookieStore }) =>
           bookings: extendedBookings,
           bookingsActions: bookings,
           members,
-          wixEvents,
+          wixEventsV2,
         },
         auth: OAuthStrategy({
           clientId: process.env.NEXT_PUBLIC_WIX_CLIENT_ID!,
